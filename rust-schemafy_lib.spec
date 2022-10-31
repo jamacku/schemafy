@@ -19,7 +19,7 @@ BuildRequires:  rust-packaging >= 21
 
 # Upstream patches -- official upstream patches released by upstream since the
 # ----------------    last release that are necessary for any reason:
-Patch0001:      0001-Add-LICENSE-to-schemafy-crates.patch
+Patch0001:      0001-docs-Add-a-README.md-and-LICENSE.patch
 
 %global _description %{expand:
 Generates serializeable Rust types from a json schema.}
@@ -36,7 +36,7 @@ This package contains library source intended for building other packages which
 use the "%{crate}" crate.
 
 %files          devel
-# FIXME: no license files detected
+%license %{crate_instdir}/LICENSE
 %{crate_instdir}/
 
 %package     -n %{name}+default-devel
