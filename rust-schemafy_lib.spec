@@ -7,7 +7,7 @@
 Name:           rust-schemafy_lib
 Version:        0.6.0
 Release:        %autorelease
-Summary:        Generates serializeable Rust types from a json schema
+Summary:        Generates serializable Rust types from a json schema
 
 License:        MIT
 URL:            https://crates.io/crates/schemafy_lib
@@ -19,10 +19,11 @@ BuildRequires:  rust-packaging >= 21
 
 # Upstream patches -- official upstream patches released by upstream since the
 # ----------------    last release that are necessary for any reason:
+# Should be fixed in next release - https://github.com/Marwes/schemafy/pull/62
 Patch0001:      0001-docs-Add-a-README.md-and-LICENSE.patch
 
 %global _description %{expand:
-Generates serializeable Rust types from a json schema.}
+Generates serializable Rust types from a json schema.}
 
 %description %{_description}
 
